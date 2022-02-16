@@ -1,0 +1,8 @@
+<launch>
+  <!-- Launch ORB_SLAM3 -->
+  <node name="ORB_SLAM3" pkg="ORB_SLAM3" type="Mono" args="$(find ORB_SLAM3)/../../../Vocabulary/ORBvoc.txt $(find ORB_SLAM3)/GOPRO_C3161326827938.848x480.wide.yaml" output="screen" />
+  <!--node name="image_view" pkg="image_view" type="image_view" respawn="false" output="screen">
+    <remap from="image" to="/camera/image_raw"/>
+    <param name="autosize" value="true" />
+  </node-->
+</launch>
